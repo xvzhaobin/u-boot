@@ -1878,6 +1878,9 @@ smdk2400_config	:	unconfig
 
 smdk2410_config	:	unconfig
 	@$(MKCONFIG) $(@:_config=) arm arm920t smdk2410 NULL s3c24x0
+	
+smdk2440_config	:	unconfig            #add by xvzhaobin @2014.05.22                             
+	@$(MKCONFIG) $(@:_config=) arm arm920t smdk2440 NULL s3c24x0
 
 SX1_config :		unconfig
 	@$(MKCONFIG) $(@:_config=) arm arm925t sx1
