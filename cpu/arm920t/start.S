@@ -151,6 +151,13 @@ reset:
 	mov	r1, #3
 	str	r1, [r0]
 #endif
+
+#define S3C2440_MPLL_400MHZ     ((0x5c<<12)|(0x01<<4)|(0x01))
+#define S3C2440_UPLL_48MHZ      ((0x10<<12)|(0x02<<4)|(0x01))
+
+
+
+
 #endif	/* CONFIG_S3C2400 || CONFIG_S3C2410 */
 
 	/*
